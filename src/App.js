@@ -30,7 +30,7 @@ class App extends React.Component {
           cat: newCatFact
         })
       });
-    axios.get('http://cat-fact.herokuapp.com/Facts')
+    axios.get('https://cat-fact.herokuapp.com/Facts')
       .then(response => response.data)
       .then(data => {
         newCatFact.fact = data.all[Math.floor(data.all.length * Math.random())].text;
